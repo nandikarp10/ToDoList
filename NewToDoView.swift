@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NewToDoView: View {
     var body: some View {
+        
         VStack{
             Text("Task title: ")
                 .font(.title)
@@ -19,6 +20,7 @@ struct NewToDoView: View {
                 .background(Color(.systemGroupedBackground))
                 .cornerRadius(15)
                 .padding()
+            
             Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
                 Text("Is it important?")
             }
@@ -29,6 +31,7 @@ struct NewToDoView: View {
             }
         }
         .padding()
+        
     }
 }
 
